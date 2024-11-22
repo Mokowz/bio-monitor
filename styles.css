@@ -1,3 +1,21 @@
 * {
   scroll-behavior: smooth;
 }
+
+.circle {
+  height: 500px;
+  width: 500px;
+  border-radius: 50%;
+  background-image: radial-gradient(yellow, black, black);
+  opacity: 60%;
+  top: -10%;
+  left: -6%;
+  z-index: -10;
+}
+
+@media screen and (max-width: 768px) {
+  .circle {
+    top: -14%;
+    left: -50%;
+  }
+}

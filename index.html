@@ -34,7 +34,7 @@
 </head>
 <body class="bg-black text-white font-poppins">
   <!-- Navbar -->
-   <nav class=" px-8 py-6 border-b border-gray-500/30">
+   <nav class=" px-8 py-6 relative border-b border-gray-500/30">
     <!-- Flex Container -->
      <div class=" flex justify-between items-center container uppercase mx-auto">
 
@@ -42,12 +42,15 @@
        <span>Bio<span class="text-yellow-500">Monitor</span></span>
 
       <!-- List -->
-       <div class="hidden md:flex space-x-8 items-center">
+       <div id="menu" class="left-0 hidden transition duration-75 absolute md:static top-20 border bg-blue-400 md:border-none md:bg-transparent py-10 md:py-0 h-auto w-screen md:w-auto flex flex-col space-y-10 md:space-y-0 md:flex-row md:flex md:space-x-8 items-center">
           <a href="#hero">Home</a>
           <a href="#services">Features</a>
           <a href="#try">Get Started</a>
           <a href="https://forms.gle/N5Rf7v2xeUyU2DnJA" class="bg-yellow-300 text-black px-6 py-2 rounded-md" target="_blank">Try It Out Now &#8599;</a>
        </div>
+
+       <!-- Hamburger Menu -->
+        <div id="list"><i class="bi bi-list text-xl md:hidden hamburger"></i></div>
      </div>
    </nav>
 
@@ -75,6 +78,7 @@
       <div class="">
         <img src="assets/undraw_farm_girl_dnpe.svg" class="">
       </div>
+      <div class="absolute circle"></div>
     </div>
     
    </div>
@@ -90,7 +94,7 @@
 
           <div class="grid md:grid-cols-3 gap-8">
             <!-- Card1 -->
-            <div class="card px-4 py-10 flex flex-col space-y-4 text-center border border-gray-500/60 shadow-lg shadow-gray-500/40 drop-shadow-3xl ">
+            <div class="card px-5 py-16 flex flex-col space-y-4 text-center border border-gray-500/60 shadow-lg shadow-gray-500/40 drop-shadow-3xl ">
               <i class="bi bi-calculator text-3xl"></i>
               <h3 class="text-lg font-semibold font-funnel text-xl">Automated Accurate Calculations</h3>
               <p class="opacity-80 text-sm">Get precise manure-to-water ratios tailored to
@@ -99,7 +103,7 @@
             </div>
 
             <!-- Card1 -->
-            <div class="card px-4 py-10 flex flex-col space-y-4 text-center border border-gray-500/60 shadow-lg shadow-gray-500/40 drop-shadow-3xl ">
+            <div class="card px-5 py-16 flex flex-col space-y-4 text-center border border-gray-500/60 shadow-lg shadow-gray-500/40 drop-shadow-3xl ">
               <i class="bi bi-phone text-3xl"></i>
               <h3 class="text-lg font-semibold font-funnel text-xl">Hassle-Free Monitoring</h3>
               <p class="opacity-80 text-sm">Streamline your biodigester management with our simple
@@ -109,7 +113,7 @@
 
 
             <!-- Card1 -->
-            <div class="card px-4 py-10 flex flex-col space-y-4 text-center border border-gray-500/60 shadow-lg shadow-gray-500/40 drop-shadow-3xl ">
+            <div class="card px-5 py-16 flex flex-col space-y-4 text-center border border-gray-500/60 shadow-lg shadow-gray-500/40 drop-shadow-3xl ">
               <i class="bi bi-bag-check text-3xl"></i>
               <h3 class="text-lg font-semibold font-funnel text-xl">Optimized Biogas Production</h3>
               <p class="opacity-80 text-sm">Achieve peak performance with improved biogas
@@ -138,5 +142,7 @@
           </div>
        </div>
      </div>
+
+     <script src="main.js"></script>
 </body>
 </html>
